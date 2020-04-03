@@ -19,16 +19,18 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'postgresql-corrugated-52413' );
+define( 'DB_NAME', 'postgresql-cylindrique-11633' );
+
+define( 'DB_URL', 'postgres: // tlmodbijgyrsdr : 5b322e74b2ce27a854475693b575ee586854266b157e930d0e773a2b77b01cfc @ ec2-54-147-209-121.compute-1.amazonaws.com : 5432 / dd30g870107413');
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'whubuujyvjjoxy' );
+define( 'DB_USER', 'tlmodbijgyrsdr' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '4472945ec7dea0ac78f76239c3898b17ed163166d2d7abb7d24e0fd47622ae7c' );
+define( 'DB_PASSWORD', '5b322e74b2ce27a854475693b575ee586854266b157e930d0e773a2b77b01cfc' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'ec2-34-202-7-83.compute-1.amazonaws.com' );
+define( 'DB_HOST', 'ec2-54-147-209-121.compute-1.amazonaws.com' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
@@ -37,6 +39,7 @@ define( 'DB_CHARSET', 'utf8mb4' );
   * N’y touchez que si vous savez ce que vous faites.
   */
 define('DB_COLLATE', '');
+define('PORT', '5432');
 
 /**#@+
  * Clés uniques d’authentification et salage.
