@@ -1,0 +1,4 @@
+2020-03-24T21:53:11+00:00 CRITICAL Maximum execution time of 256 seconds exceeded dans C:\xampp64\htdocs\yeswecange\wordpress\wp-content\plugins\mailchimp-for-wp\includes\forms\class-form-previewer.php à la ligne 3
+
+2020-03-24T21:57:05+00:00 CRITICAL Maximum execution time of 256 seconds exceeded dans C:\xampp64\htdocs\yeswecange\wordpress\wp-content\plugins\js_composer\include\params\tab_id\tab_id.php à la ligne 2
+

@@ -1,0 +1,7 @@
+/* How to include file options in theme */
+if( function_exists( 'pixi_redux_setup' ) ) {
+	pixi_redux_setup( $file_option );
+}
+
+/* This is your option name where all the Redux data is stored. */
+$opt_name = "pixi_options";

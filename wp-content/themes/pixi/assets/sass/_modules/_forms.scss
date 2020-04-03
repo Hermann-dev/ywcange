@@ -1,0 +1,177 @@
+/* ------------------------------------- */
+/* 16. forms ........................... */
+/* ------------------------------------- */
+/* input_field */
+textarea, input:not([type="checkbox"]):not([type="radio"]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+textarea, input, select {
+    font-size: 13px;
+    padding: 6px 15px;
+    line-height: 22px;
+    font-weight: 500;
+    outline: none;
+    border: 1px solid #e7e7e7;
+    outline: none;
+    border-radius: 0;
+    max-width: 100%;
+    background-color: transparent;
+}
+input, select {
+    height: 50px;
+}
+textarea{
+    height: 112px;
+}
+.wpcf7-form .row div[class*="col-"]:not(.rm-margin) {
+    margin-bottom: 30px;
+}
+.wpcf7-form .rm-margin .wpcf7-form-control {
+    margin-top: 0;
+}
+input[type="submit"] {
+    width: auto;
+    position: relative;
+    color: #ffffff;
+	@extend .bg-color-main;
+    padding: 6px 15px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 12px;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.input {
+	position: relative;
+	z-index: 1;
+	vertical-align: top;
+}
+.input_field {
+	position: relative;
+	width: 100%;
+	background: transparent;
+	border: 1px solid rgba(0,0,0,0.15);
+	font-size: 13px;
+    padding-left: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    outline: none;
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.bg-dark .input_field {
+	border: 1px solid rgba(255,255,255,0.5);
+}
+.input_field:focus , .input_field:hover , .input-filled .input_field {
+	 outline:none;
+	 border: 1px solid;
+	 @extend .border-color-main;
+}
+.wpcf7 .button{ 
+	margin:0;
+	border: 2px solid transparent;
+	line-height: 1.2;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+	font-size: 13px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 40px;
+    line-height: 47px;
+    position: relative;
+    letter-spacing: 0.02em;
+	@extend .font-primary;
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.button.center{
+	margin: auto;
+    display: block;
+	flex: none;
+}
+
+/* input_field_line */
+.input_field_line {
+	position: relative;
+	width: 100%;
+	background-color:transparent;
+	border-right:0px;
+	border-top:0px;
+	border-left:0px;
+	border-bottom:1px solid #ccc;
+	padding: 10px 0;
+    margin: 5px 0;
+	@include single-transition(all, .4s, ease-in-out);	
+}
+.input_field_line:focus , .input_field_line:hover , .input-filled .input_field_line {
+    border-bottom:1px solid;
+	@extend .border-color-main;
+    outline:none;
+}
+.input_field_grey{
+	position: relative;
+	width: 100%;
+	background: $color-gray;
+	color:$color-font !important;
+	border:none;
+	padding:10px 25px;
+	@include border-radius(4px);
+	@include single-transition(all, .4s, ease-in-out);	
+	&:focus , &:hover {
+	   border:none; 
+	   -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+	   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);
+	}
+}
+textarea.input_field_grey{ padding:20px 25px; min-height:200px; }
+
+/* post-password-form */
+.post-password-form {
+	p {
+		position: relative;
+		margin-bottom: 15px;
+		label {
+			display: block;
+			width: calc(100% - 160px);
+			vertical-align: bottom;
+			font-size: 10px;
+			text-transform: uppercase;
+			line-height: 10px;
+			letter-spacing: .6px;
+		}
+	}
+	input[type="password"]{
+		display: block;
+        width: 100%;
+		height: 43px;
+		line-height: 30px;
+		padding: 5px 15px;
+		margin: 0 0 19px;
+		border: 1px solid #dadada;
+		border-radius: 4px;
+		-webkit-appearance: none;
+		margin-top: 10px;
+		margin-bottom: 0;
+		border-radius: 4px 0 0 4px;
+	}
+	input[type="submit"] {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 0;
+		width: 160px;
+		height: 43px;
+		line-height: 43px;
+		border-radius: 0 4px 4px 0;
+		&:hover {  opacity: 0.9; }
+	}
+}

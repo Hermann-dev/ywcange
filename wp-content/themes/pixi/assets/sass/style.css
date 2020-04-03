@@ -1,0 +1,66 @@
+/*
+Error: Invalid US-ASCII character "\xC2"
+        on line 623 of /Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/_modules/_blog.scss
+        from line 39 of /Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/style.scss
+
+618: 	.cat-name a{ font-size: 13px; @extend .color-main; }
+619: }
+620: .masonry-post.col-md-4.col-lg-4.mo-blog-masonry-wrapper.grid4 {
+621:     width: 100%;
+622: }
+623: .col-lg-12.content.mo-blog .containe { width:100%; }
+624: .format-post figure > a{ z-index:1; }
+625: 
+626: /* share *\/
+627: .share-links {
+628: 	float: left;
+
+Backtrace:
+/Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/_modules/_blog.scss:623
+/Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/style.scss:39
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1325:in `rescue in block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1322:in `block in find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `each'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `each_with_index'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:1321:in `find_encoding_error'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/util.rb:930:in `check_sass_encoding'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:439:in `check_encoding!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:395:in `_to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:400:in `run'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.3.0/gems/sass-3.4.25/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `load'
+/Applications/Adobe Dreamweaver CC 2017/Adobe Dreamweaver CC 2017.app/Contents/Resources/gems/bin/sass:30:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid US-ASCII character \"\xC2\"\A         on line 623 of /Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/_modules/_blog.scss\A         from line 39 of /Applications/XAMPP/xamppfiles/htdocs/pixi/wp-content/themes/pixi/assets/sass/style.scss\A \A 618: 	.cat-name a{ font-size: 13px; @extend .color-main; }\A 619: }\A 620: .masonry-post.col-md-4.col-lg-4.mo-blog-masonry-wrapper.grid4 {\A 621:     width: 100%;\A 622: }\A 623: .col-lg-12.content.mo-blog .containe { width:100%; }\A 624: .format-post figure > a{ z-index:1; }\A 625: \A 626: /* share */\A 627: .share-links {\A 628: 	float: left;"; }

@@ -1,0 +1,108 @@
+/* ------------------------------------- */
+/* 19. Media Queries ................... */
+/* ------------------------------------- */
+/* Notebook devices (max-width: 1280px) */
+@include notebook {
+	h1.lrg {font-size:60px;line-height:65px;}
+	h2.lrg {font-size:50px;line-height:60px;}
+    h3.lrg {font-size:45px;line-height:50px;}
+   .mo-header-v1 .menu-toggle{ width:100%; background:#fff !important; height:70px; }
+   .mo-header-v1 .text_v1, .mo-header-v1 .social-sidepanel { display: none;}
+   .mo-header-v1 .menu-lines { right:5%; top:-12px; left:auto; width:60px; }
+   .mo-header-v1 .logo { padding:5px; width:70px; top:4px; left:4%; }
+   .nav-sidepanel>ul>li{ padding:5px 0; }
+   .sidepanel-content .nav-sidepanel>ul{ padding:0 15px;}
+   .vc_row .row_style:nth-child(1) svg.curve { top: -288px;}
+   .pricing-item.style2 { padding: 50px 0; }
+   .pixi_image_box-style5 .content{ display:none; }
+   .mo-header-v4 .header_tools{ display: none;}
+   .mo-bg-fixed { background-size: 100% 100%; }
+   .pixi_image_box-style5 .perspective-caption{  padding:30px 20px; }
+   .pixi_image_box-style4 .title-wrap .content{ display: none; }
+   .footer_v1 .footer-widget-2{padding-left:15px;}
+   .counter-number.style1 { text-align: center; }
+   .counter-number.style1 i { display: block; margin: 3px auto; }
+   .counter-number.style1 h3{ font-size: 40px; }
+   .counter-number.style1 h6 { margin-left: 0; }
+   .masonry-posts .grid-left-post .info-post {  padding: 15px 30px; }
+   .sticky-buttons{display: none; }
+   .sidebar-right { padding: 30px; }
+   .col-lg-12.mo-blog, .single-post.entry-content, .mo-portfolio-article.portfolio-full .container, .mo-portfolio-article.portfolio-parallax .container, .single-header.basic .title-wrap, .single-header.basic .col-lg-12.mo-blog{ padding:0 30px;}
+   .single.single-product .single-product-content{ padding:0 15px;}
+}
+/* Medium Devices, Desktops (max-width: 1024px) */
+@include medium {
+   h1.lrg {font-size:36px;line-height:1.2;}
+   h2.lrg {font-size:28px;line-height:1.2;}
+   h3.lrg {font-size:24px;line-height:1.15;}
+  .sidepanel-content{ padding:60px 30px;}
+  .sidepanel{ right: -360px;  width: 350px;}
+  .main-container{ padding-left:15px; padding-right:15px; }
+  .main-search-content { width: 80%; }
+  .main-search-content form input[type="search"] { font-size: 30px; }
+  .mo-header-v5 .mo-menu-list > ul > li > a:hover:before{ background:transparent;}
+  .service, .image_box { max-width:360px; margin:30px auto; }
+  .row_style svg.waves { height: 150px;}
+  .row_style svg.round { height: 60px;}
+  .vc_row .row_style:nth-child(1) svg.curve { top:-340px; height:465px;}
+  .vc_row .row_style:nth-child(1) svg.waves{ top:-120px; }
+  .masonry-item { width:50% !important; }
+  .pixi_image_box-style2 .title-wrap , .pixi_image_box-style2 .title-wrap .content{  border:solid 10px transparent; }
+  .vc_col-sm-3 .pixi_icon_box-style5 .content p{ margin:0 auto; }
+  .pricing-item.style1 .pricing .pricing-currency { font-size:30px !important; line-height:30px !important; }
+  .pricing-item.style1 h3{ font-size: 16px !important; }
+  .counter-number i { font-size: 38px; }
+  .comment .depth-2, .comment.depth-3, .comment.depth-4 { padding-left:25px; }
+  .mo-left-navigation .mo-header-menu .mo-logo { padding: 30px 10px 30px; }
+  .timeline-year { float: none;  width: 100%; text-align: left;  margin-left: 60px; font-size: 11px; }
+  .timeline-text-content { padding-left: 20px; margin-top:0; }
+  .timeline:before { left: 0; }
+  .timeline-title:after { left: -34px; }
+  .timeline-title:before { left: -26px; }
+  .timeline-text-content:after { top: 15px; left: 0px; }
+  .sidebar.sidebar-right, .sidebar.sidebar-left, .wpb_widgetised_column {  margin-top:0;  margin-bottom:60px !important; float: left; width:100%; padding: 50px;}
+  .with-sidebar{ width:100% !important}
+  .mo-blog-archive .grid-post .info-post , .mo-blog-archive .with-sidebar.mo-blog .post-content {  margin-right:0px; }
+  .pixi-like { margin-top: 0; margin-bottom: 10px;}
+  .mo-portfolio-article .mo-title{margin-top: 30px; }
+  .mo-comment-wrapper{ padding-right: 45px !important; }
+  .footer-fixed { position:relative; top:0; }
+  .boxed .footer-fixed { position:relative; top:0; width:100%;  margin-right:0; margin-left:0;}
+  .main-content { margin-bottom:0 !important;}
+  .single-header .blockquote-post blockquote { font-size:13px; padding:20px; }
+  .post-pagi { width:100%; }
+  .masonry-posts .grid-left-post .format-post, .masonry-posts .grid-left-post .info-post { width: 100%;}
+  .mo-portfolio-article .portfolio-side { margin-top: 0; }
+  .single-product .mo-product-item .mo-thumb .woocommerce-main-image img {margin:0;}
+}
+/* Small Devices, Tablets (max-width: 768px) */
+@include tablet {
+	.hide_mobile { display:none; height:0 !important; }
+	.navigation img.Logo_white, .navigation .logo.logo_page {margin-top: 0; position: relative; top: -12px;}
+	.vc_column_container>.vc_column-inner , footer > .container{ padding-left:25px !important; padding-right:25px !important; }
+	.row_style svg.waves , .row_style svg.sm_triangle { height: 100px; }
+	.vc_row .row_style:nth-child(1) svg.waves{ top:-95px;}
+	.row_style svg.sm_triangle { bottom: 0;}
+	.vc_row .row_style:nth-child(1) svg.curve { top:-290px; height:465px;}
+	.masonry-item { width:100% !important; }
+	.single-header.img_overlay .title-wrap { padding: 20px; }
+	.single-header.img_overlay .post-title { font-size:24px; margin:0 auto; line-height: 1.3; }
+	.single-header.img_overlay { height: 300px; }
+	.single-post ul.meta-post li, .single-post ul.meta-post li a { letter-spacing:0; margin-top:15px;}
+	.portfolio-effect1 , .portfolio-effect2 , .portfolio-effect3 , .portfolio-effect4 { max-width: 360px; margin-left: auto !important; margin-right: auto !important;}
+	.page-header .mo-title-bar h2 { margin-top:0; margin-bottom:10px; }
+	.mo-testimonial-carousel .content p {font-size: 20px;}
+	.related-posts .related-post { margin-bottom: 30px; }
+	.masonry-posts .type-post, .masonry-posts .post-content { max-width: 390px; }
+	.portfolio-filter a { padding: 5px 10px; }
+	.pixi_image_box-style5 .content{ display: block; font-size:14px; line-height:27px; }
+	.pagetitle-v3 .mo-title-bar { text-align: center; }
+	.pagetitle-v3 .mo-path { float: none; }
+	.pagetitle-v3 .mo-path-inner { float: none; margin-top: 0; text-align: center;}
+	.pixi_image_box-style2 .title-wrap , .pixi_image_box-style2 .title-wrap .content{  border:solid 15px transparent; }
+	.comment .depth-2, .comment.depth-3, .comment.depth-4 { padding-left:15px; }
+	.list-col2 ul li, .list-col2 ol li { width: 100%;}
+	.pixi_icon_box-style7 .title-wrap .content { border: solid 25px transparent; font-size: 12px; line-height: 20px; }
+    .counter-number { margin-top: 30px; margin-bottom: 30px; }
+	.footer_v2 .footer-widget-1, .footer_v2 .footer-widget-2, .footer_v2 .footer-widget-3, .footer_v2 .footer-widget-4 { padding-top:15px !important; padding-bottom:0 !important; }
+}
