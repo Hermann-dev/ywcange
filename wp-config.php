@@ -19,18 +19,18 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'postgresql-cylindrique-11633' );
+define( 'DB_NAME', 'b7_25471405_Yeswecange' );
 
-define( 'DB_URL', 'postgres: // tlmodbijgyrsdr : 5b322e74b2ce27a854475693b575ee586854266b157e930d0e773a2b77b01cfc @ ec2-54-147-209-121.compute-1.amazonaws.com : 5432 / dd30g870107413');
+define( 'DB_URL', 'http://185.27.134.10/db_structure.php?db=b7_25471405_Yeswecange');
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'tlmodbijgyrsdr' );
+define( 'DB_USER', 'b7_25471405' );
 
 /** Mot de passe de la base de données MySQL. */
-define( 'DB_PASSWORD', '5b322e74b2ce27a854475693b575ee586854266b157e930d0e773a2b77b01cfc' );
+define( 'DB_PASSWORD', 'HermannYaho4978' );
 
 /** Adresse de l’hébergement MySQL. */
-define( 'DB_HOST', 'ec2-54-147-209-121.compute-1.amazonaws.com' );
+define( 'DB_HOST', 'sql101.byethost7.com' );
 
 /** Jeu de caractères à utiliser par la base de données lors de la création des tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
